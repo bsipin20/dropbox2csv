@@ -2,19 +2,16 @@
 
 This is a kit for converting dropbox xlsx file to csv 
 
-
-
 `
-dropbox2csv.openfile('file')
-`
-
-
-
-`
-dropbox2csv.openfile
+r = dropbox2csv.get('/path_to_folder/',token="",'.xlsx')
 `
 
 `
-dropbox2csv.openfile
+r.to_xlsx('/local_folder/')
+r.to_csv('/local_folder/')
+r.to_pickle('/local_folder/')
+r.to_list()
+df = r.to_df()
 `
+
 
